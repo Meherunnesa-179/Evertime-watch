@@ -1,0 +1,10 @@
+.link{
+    list-style: none;
+    text-align: start;
+}
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}

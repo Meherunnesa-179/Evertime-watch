@@ -1,0 +1,19 @@
+.new-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:'5px'
+    
+}
+input , textarea {
+    width: 50%;
+    margin: 15px;
+    color:blue;
+    padding:5px;
+    border-radius:30px;
+    text-align: center;
+}
+.add{
+    background:linear-gradient(135deg , skyblue , pink)
+}

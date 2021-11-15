@@ -1,0 +1,8 @@
+.form-style{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.input-field{
+    margin-top: 10px;
+}

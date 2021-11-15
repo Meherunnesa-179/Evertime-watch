@@ -1,0 +1,13 @@
+.background{
+  background: linear-gradient( #307D7E, #7C99D8 );
+}
+  .copyright {
+    background-color: #7C99D8;
+  }
+  
+  ul , li{
+      list-style: none;
+      text-align: center;
+      justify-content: center;
+  }
+  
