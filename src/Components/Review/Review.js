@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 import Rating from 'react-rating'
 
 const Review = () => {
-    const [review , setReview] = useState([])
+    const [review , setReview] = useState([]);
     useEffect( () =>{
         fetch("https://guarded-inlet-45451.herokuapp.com/review")
         .then((res) => res.json())

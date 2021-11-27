@@ -4,14 +4,12 @@ import initializeAuthentication from '../Firebase/firebase.init';
 
 
 initializeAuthentication();
-
 const useFirebase = () => {
     const [user , setUser] = useState({});
     const [isLoading , setIsLoading] = useState(true);
     const [authError, setAuthError] = useState('');
     const googleProvider = new GoogleAuthProvider();
     const auth = getAuth();
-
 
     useEffect(() =>{
         const unsubscribe = onAuthStateChanged(auth , (user)=> {
@@ -39,7 +37,6 @@ const useFirebase = () => {
         }).finally(() => setIsLoading(false));
 }
 
-
 //register user
 
 const registerUser = (email, password, name, history) => {
@@ -65,7 +62,6 @@ const registerUser = (email, password, name, history) => {
         })
         .finally(() => setIsLoading(false));
 }
-
 //login userCredential
 
 const loginUser = (email, password, location, history) => {
@@ -82,7 +78,6 @@ const loginUser = (email, password, location, history) => {
         .finally(() => setIsLoading(false));
 }
 
-
 const saveUser = (email, displayName, method) => {
     const user = { email, displayName };
     console.log(email , displayName);
@@ -95,8 +90,6 @@ const saveUser = (email, displayName, method) => {
     })
         .then()
 }
-
-
 const logOut=()=> {
    signOut(auth).then(() => {
        setUser({})
@@ -104,7 +97,6 @@ const logOut=()=> {
        // An error happened.
      });
 }
-
     return {
         signInWithGoogle,
         user,

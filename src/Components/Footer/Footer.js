@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css'
 import { Col, Container, Row } from "react-bootstrap";
+import ManageProducts from './../ManageProducts/ManageProducts';
 
 const Footer = () => {
     return (
@@ -9,7 +10,7 @@ const Footer = () => {
       <div className="py-4">
           <Container>
               <Row>
-                  <Col>
+                  <Col sx={12} md={3}>
                 <h6 >CUSTOMER SERVICE</h6>
                       <ul>
                           <li>My Account</li>
@@ -18,7 +19,7 @@ const Footer = () => {
                           <li>FAQ</li>
                       </ul>
                   </Col>
-                  <Col>
+                  <Col sx={12} md={3}>
                   <h5>LEGAL</h5>
                   <ul>
                       <li>Privacy Policy</li>
@@ -26,7 +27,7 @@ const Footer = () => {
                       <li>Terms & Conditions</li>
                   </ul>
                   </Col>
-                  <Col>
+                  <Col sx={12} md={3}>
                   <h6>Help</h6>
                   <ul>
                       <li>About Us</li>
@@ -35,10 +36,10 @@ const Footer = () => {
                       <li>Products</li>
                   </ul>
                   </Col>
-                  <Col>
+                  <Col sx={12} md={3}>
                   <h6>SignUP for our news letter</h6>
-                  <input type="email" name="input email" id="" placeholder="input your Email" />
-                  <button type="submit">Submit</button>
+                  <input className="w-100" type="email" name="input email" id="" placeholder="input your Email" />
+                  <button className="w-100 border rounded-3 mt-3" type="submit">Submit</button>
                   </Col>
               </Row>
           </Container>

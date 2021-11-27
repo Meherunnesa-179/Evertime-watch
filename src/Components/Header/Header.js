@@ -2,15 +2,13 @@ import React from 'react';
 import './Header.css'
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-import useFirebase from '../../Hooks/useFirebase';
-
-
+import useFirebase from '../../Hooks/useFirebase'
 
 const Header = () => {
   const {user , logOut} = useFirebase();
     return (
         <div>
-              <Navbar className="header" expand="lg">
+              <Navbar sticky="top" className="header" expand="lg">
                 <Container>
                  <Navbar.Brand  className="text-white fw-bolder" to="/home">
                         Evertime Watch
@@ -23,7 +21,6 @@ const Header = () => {
                         <Nav.Link as={NavLink} to="/products" className="text-white">Explore</Nav.Link>
                         <Nav.Link as={NavLink} to="/about" className="text-white">About</Nav.Link>
                         <Nav.Link as={NavLink} to="/privacy" className="text-white">Privacy Policy</Nav.Link>
-                        
                 {!user?.email ?  (
                     <>
                       <Nav.Link as={NavLink} to="/register" className="text-white">

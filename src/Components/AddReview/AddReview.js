@@ -14,21 +14,18 @@ const AddReview = () => {
     })
       .then((res) => res.json())
       .then((result) => console.log(result));
-
   };
   return (
     <div>
       <h1>Review</h1>
       <img
             style={{
-                // width: "45px",
                 borderRadius: "50%",
               }}
               src={user?.photoURL}
-              alt=""
+              alt="profile picture"
             />
       <form className="form-style" onSubmit={handleSubmit(onSubmit)}>
-      
         <input
           className="input-field"
           name="name"
@@ -45,6 +42,7 @@ const AddReview = () => {
           {...register("email", { required: true })}
         />
           <input 
+          className="input-field"
            type="number"
            placeholder="Ratings.........(0-5)"
             {...register("number", { required: true, maxLength: 1 })} />

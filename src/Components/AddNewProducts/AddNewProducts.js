@@ -13,7 +13,6 @@ const AddProduct = () => {
     })
       .then((res) => res.json())
       .then((result) => console.log(result));
-    console.log(data);
 }
     return (
         <div className="p-5 add">
@@ -29,7 +28,7 @@ const AddProduct = () => {
       <textarea placeholder="about" {...register("about")} />
       <input type="submit" />
     </form>
-            </Container>          
+</Container>          
         </div>
 
     );

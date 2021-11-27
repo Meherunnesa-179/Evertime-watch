@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const useProducts = () => {
     const [products, setProducts] = useState([]);
@@ -7,7 +7,6 @@ const useProducts = () => {
         .then((res) => res.json())
         .then((data) => {
           setProducts(data);
-        // console.log(data);
         });
     } , [])
     return{products , setProducts}

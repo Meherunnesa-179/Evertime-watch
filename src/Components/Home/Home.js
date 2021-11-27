@@ -70,7 +70,7 @@ const Home = () => {
             </h6>
           </Slide>
         <Zoom>
-        <div className=" row row-cols-1 row-cols-md-3 g-3 m-1">
+        <div className=" row row-cols-1 row-cols-md-3 g-2 m-1">
           {
           features?.map(product => <Product
             key = {product._id}
@@ -80,7 +80,6 @@ const Home = () => {
           </div>
           <Review></Review>
           <About></About>
-          <Privacy></Privacy>
         </Zoom>
         </Container>
         </div>

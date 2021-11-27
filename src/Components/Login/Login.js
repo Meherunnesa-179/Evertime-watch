@@ -29,7 +29,7 @@ const Login = () => {
         }
     return (
         <div>
-             <div className="container mx-auto w-50 text-center m-5 p-5 ">
+             <div className="container mx-auto w-md-100 text-center m-2 ">
             <h2>Login</h2>
                <form onSubmit={handleLoginSubmit}>
                <input onBlur={handleOnBlur} type="email" name="email" className="w-50 m-2 text-center" id="email" placeholder="Enter your email" />
